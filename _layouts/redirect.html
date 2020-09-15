@@ -10,7 +10,6 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>Redirecting to {{ destination }}</title>
   <link rel="canonical" href="{{ destination }}">
   <noscript>
     <meta http-equiv="refresh" content="0; url={{ destination }}">
@@ -29,6 +28,7 @@
         window.location.replace(url);
       }
     </script>
+    <title>Redirecting to {{ destination }}</title>
   <body>
     <a href="{{ destination }}">Follow this link if you are not redirected automatically.</a>
   </body>
